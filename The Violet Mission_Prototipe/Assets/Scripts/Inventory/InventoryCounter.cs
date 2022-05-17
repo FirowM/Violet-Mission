@@ -59,21 +59,6 @@ public class InventoryCounter : MonoBehaviour
 
     public void FruitInput()
     {
-        if (Fruit >= 1 && (Input.GetKey(KeyCode.P)))
-        {
-            Fruit--;
-            GameObject.FindWithTag("Player").GetComponent<Player>().Food.value += 10f;
-        }
-
-        if (Fruit == 0)
-        {
-            //_iconFruit.SetActive(false);
-        }
-        else
-        {
-           // _iconFruit.SetActive(true);
-        }
-
         _fruitQuantity.text = "" + _fruit; 
     }
 
